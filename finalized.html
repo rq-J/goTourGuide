@@ -1,0 +1,318 @@
+<!-- /*
+* Website Name: Go Tour Guide
+* Website Author: Justine Roque
+* Website URI: https://github.com/rq-J
+*/ -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="GTGuide">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap4" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/daterangepicker.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .img {
+            height: 400px;
+            width: auto;
+        }
+    </style>
+
+    <title>Go Tour Guide</title>
+</head>
+
+<body>
+
+
+    <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close">
+                <span class="icofont-close js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div>
+
+
+    <!--Navbar-->
+    <nav class="site-nav">
+        <div class="container">
+            <div class="site-navigation">
+                <a href="index.html" class="logo m-0">Go Tour Guide <span class="text-primary">.</span></a>
+
+                <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li class="has-children">
+                        <a href="#">B.L.I.S.T</a>
+                        <ul class="dropdown">
+                            <li><a href="baguio.html">Baguio</a></li>
+                            <li><a href="la-trinidad.html">La Trinidad</a></li>
+                            <li><a href="itogon.html">Itogon</a></li>
+                            <li><a href="sablan.html">Sablan</a></li>
+                            <li><a href="tuba.html">Tuba</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Log Out</a></li>
+                </ul>
+
+                <a href="#"
+                    class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"
+                    data-toggle="collapse" data-target="#main-navbar">
+                    <span></span>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- <div class="hero" style="padding-bottom: 0rem;padding-top: 5rem; margin-bottom: 0;">
+
+    </div> -->
+
+    <div class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="intro-wrap">
+                        <!-- <h1 class="mb-5"><span class="d-block">Enjoy Your</span> Trip In <span
+								class="typed-words"></span></h1> -->
+
+                        <div class="row">
+                            <div class="col-12">
+                                <!-- <p class="form" style="font-size: larger;">If you're looking to explore new places,
+									there's no better time to start than now!
+									Whether it's a nearby city or a far-off destination, traveling can broaden your
+									horizons and give you experiences you'll never forget. So why not take the leap and
+									start planning your next adventure? Who knows where it might take you!</p> -->
+                                <form class="form">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <input type="text" name="" id="" value="Destination: Baguio"
+                                                class="form-control" readonly>
+                                            <br>
+                                            <h4>Attractions:</h4>
+                                            <span>Attraction #1, Attraction #2, Attraction #3, Attraction #4, Attraction
+                                                #5, Attraction #6, Attraction #7, Attraction #8</span>
+                                            <br>
+                                            <span>Total: 8 Attractions</span>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <input type="text" name="" id="" value="Schedule" class="form-control mb-2"
+                                                readonly>
+                                            <span>Date:</span>
+                                            <br>
+                                            <span>16/02/2023 THU</span>
+                                            <br>
+                                            <span>17/02/2023 FRI</span>
+                                        </div>
+                                        <div class="col-4">
+                                            <input type="text" name="" id="" value="From: Manila" class="form-control"
+                                                readonly>
+                                            <br>
+                                            <h4>Vehicle:</h4>
+                                            <span>Van</span>
+                                            <br><br>
+                                            <span>Duration:</span><br>
+                                            <span>8 hours</span>
+
+                                            <br><br>
+                                            <span>Inclusions:</span><br>
+                                            <ul>
+                                                <li>*Roundtrip</li>
+                                                <li>*Toll fees</li>
+                                                <li>*24 hours utility</li>
+                                                <li>*Driver</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-4">
+                                            <input type="text" name="" id="" value="Adult/s:" class="form-control"
+                                                readonly>
+                                            <br>
+                                            <span>= 4</span>
+                                            <br>
+                                            <br>
+                                            <input type="text" name="" id="" value="Children:" class="form-control"
+                                                readonly>
+                                            <br>
+                                            <span>= None</span>
+                                        </div>
+                                    </div>
+                                    <!-- <div class=" mb-2">
+                                        <hr>
+                                        <h4>Recommended:</h4>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<span>Vehicle: Van</span>
+                                        <br>
+                                        <img src="images/to.png" alt="img">
+                                        <hr>
+                                        <h4>Pricing Information</h4>
+                                        <span>Expect to Pay:</span>
+                                        <ul>
+                                            <li>5-8k pesos</li>
+                                            <li>*Roundtrip</li>
+                                            <li>*Toll fees included</li>
+                                            <li>*24 hours duration</li>
+                                        </ul>
+                                    </div> -->
+                                    <br>
+                                    <div class="row align-items-center">
+                                        <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-12">
+                                            <!-- <input type="submit" class="btn btn-primary btn-block" value="Proceed"> -->
+                                            <a href="payment.html"
+                                                class="btn btn-primary float-right px-5">Proceed to Payment</a>
+                                        </div>
+                                        <!-- <div class="col-lg-8">
+											<label class="control control--checkbox mt-3">
+												<span class="caption">Save this search</span>
+												<input type="checkbox" checked="checked" />
+												<div class="control__indicator"></div>
+											</label>
+										</div> -->
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-5"> -->
+                <!-- <div class="slides">
+						<img src="images/hero-slider-1.jpg" alt="Image" class="img-fluid active">
+						<img src="images/hero-slider-2.jpg" alt="Image" class="img-fluid">
+						<img src="images/hero-slider-3.jpg" alt="Image" class="img-fluid">
+						<img src="images/hero-slider-4.jpg" alt="Image" class="img-fluid">
+						<img src="images/hero-slider-5.jpg" alt="Image" class="img-fluid">
+					</div> -->
+                <!-- <img src="images/maps.png" alt="image"> -->
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="site-footer">
+        <div class="inner first">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6">
+                        <div class="widget">
+                            <h3 class="heading">About Tour</h3>
+                            <p>From hiking through wonderful places to tasting exotic street food, we'll help you create
+                                memories that will last a lifetime. So why wait?</p>
+                        </div>
+                        <div class="widget">
+                            <ul class="list-unstyled social">
+                                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                                <li><a href="#"><span class="icon-instagram"></span></a></li>
+                                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                                <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                                <li><a href="#"><span class="icon-dribbble"></span></a></li>
+                                <li><a href="#"><span class="icon-pinterest"></span></a></li>
+                                <li><a href="#"><span class="icon-apple"></span></a></li>
+                                <li><a href="#"><span class="icon-google"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                        <div class="widget">
+                            <h3 class="heading">Contact</h3>
+                            <ul class="list-unstyled quick-info links">
+                                <li class="email"><a href="#">mail@example.com</a></li>
+                                <li class="phone"><a href="#">+1 222 212 3819</a></li>
+                                <li class="address"><a href="#">43 Raymouth Rd., Baguio, Philippines</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="inner dark">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-8 mb-3 mb-md-0 mx-auto">
+                        <p>Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash;
+                            Designed by <a href="#" class="link-highlight">Go Tour Guide</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="overlayer"></div>
+    <div class="loader">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/daterangepicker.js"></script>
+
+    <script src="js/typed.js"></script>
+    <script>
+        $(function () {
+            var slides = $('.slides'),
+                images = slides.find('img');
+
+            images.each(function (i) {
+                $(this).attr('data-id', i + 1);
+            })
+
+            var typed = new Typed('.typed-words', {
+                strings: ["Baguio.", " La Trinidad.", " Itogon.", " Sablan.", " Tuba."],
+                typeSpeed: 80,
+                backSpeed: 80,
+                backDelay: 4000,
+                startDelay: 1000,
+                loop: true,
+                showCursor: true,
+                preStringTyped: (arrayPos, self) => {
+                    arrayPos++;
+                    console.log(arrayPos);
+                    $('.slides img').removeClass('active');
+                    $('.slides img[data-id="' + arrayPos + '"]').addClass('active');
+                }
+
+            });
+        })
+    </script>
+
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,363 @@
+<!-- /*
+* Website Name: Go Tour Guide
+* Website Author: Justine Roque
+* Website URI: https://github.com/rq-J
+*/ -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="GTGuide">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap4" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/daterangepicker.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .img {
+            height: 400px;
+            width: auto;
+        }
+
+        .inlineimage {
+            max-width: 470px;
+            margin-right: 8px;
+            margin-left: 10px
+        }
+
+        .images {
+            display: inline-block;
+            max-width: 98%;
+            height: auto;
+            width: 22%;
+            margin: 1%;
+            left: 20px;
+            text-align: center
+        }
+    </style>
+
+    <title>Go Tour Guide</title>
+</head>
+
+<body>
+
+
+    <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close">
+                <span class="icofont-close js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div>
+
+
+    <!--Navbar-->
+    <nav class="site-nav">
+        <div class="container">
+            <div class="site-navigation">
+                <a href="index.html" class="logo m-0">Go Tour Guide <span class="text-primary">.</span></a>
+
+                <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li class="has-children">
+                        <a href="#">B.L.I.S.T</a>
+                        <ul class="dropdown">
+                            <li><a href="baguio.html">Baguio</a></li>
+                            <li><a href="la-trinidad.html">La Trinidad</a></li>
+                            <li><a href="itogon.html">Itogon</a></li>
+                            <li><a href="sablan.html">Sablan</a></li>
+                            <li><a href="tuba.html">Tuba</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Log Out</a></li>
+                </ul>
+
+                <a href="#"
+                    class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"
+                    data-toggle="collapse" data-target="#main-navbar">
+                    <span></span>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- <div class="hero" style="padding-bottom: 0rem;padding-top: 5rem; margin-bottom: 0;">
+
+    </div> -->
+
+    <div class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="intro-wrap">
+                        <!-- <h1 class="mb-5"><span class="d-block">Enjoy Your</span> Trip In <span
+								class="typed-words"></span></h1> -->
+
+                        <div class="row">
+                            <div class="col-12">
+                                <!-- <p class="form" style="font-size: larger;">If you're looking to explore new places,
+									there's no better time to start than now!
+									Whether it's a nearby city or a far-off destination, traveling can broaden your
+									horizons and give you experiences you'll never forget. So why not take the leap and
+									start planning your next adventure? Who knows where it might take you!</p> -->
+                                <form class="form">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <h4 class="mb-2">Payment Summary:</h4>
+                                                    <span class="mb-2">Tour guiding fee</span>
+                                                    <br>
+                                                    <span class="mb-2">Transportation fee</span>
+                                                    <br>
+                                                    <span class="mb-2">Service fee</span>
+                                                    <br>
+                                                    <span class="mb-2">Subtotal:</span>
+                                                    <br>
+                                                    <span class="mb-2">Total:</span>
+                                                    <br>
+                                                </div>
+                                                <div class="col-6">
+                                                    <h4 class="mb-2">&nbsp;</h4>
+                                                    <span class="mb-2">₱2,000.00</span>
+                                                    <br>
+                                                    <span class="mb-2">₱5,000.00</span>
+                                                    <br>
+                                                    <span class="mb-2">₱1,500.00</span>
+                                                    <br>
+                                                    <span class="mb-2">₱11,000.00</span>
+                                                    <br>
+                                                    <span class="mb-2">₱11,000.00</span>
+                                                    <br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-12 col-md-offset-4">
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading">
+                                                            <div class="row">
+                                                                <h3 class="text-center">Payment Details</h3>
+                                                                <div class="inlineimage"> <img
+                                                                        class="img-responsive images"
+                                                                        src="https://cdn0.iconfinder.com/data/icons/credit-card-debit-card-payment-PNG/128/Mastercard-Curved.png">
+                                                                    <img class="img-responsive images"
+                                                                        src="https://cdn0.iconfinder.com/data/icons/credit-card-debit-card-payment-PNG/128/Paypal-Curved.png">
+                                                                    <img class="img-responsive images"
+                                                                        src="https://cdn0.iconfinder.com/data/icons/credit-card-debit-card-payment-PNG/128/American-Express-Curved.png">
+                                                                    <img src="https://www.sunstar.com.ph/uploads/images/2022/09/13/381065.jpg"
+                                                                        alt="" class="img-responsive images"
+                                                                        style="width:20%;height: 60%;border-radius: 10%;">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel-body">
+                                                            <div role="form">
+                                                                <div class="row">
+                                                                    <div class="col-xs-12">
+                                                                        <div class="form-group"> <label>CARD
+                                                                                NUMBER</label>
+                                                                            <div class="input-group"> <input type="tel"
+                                                                                    class="form-control"
+                                                                                    placeholder="Valid Card Number" />
+                                                                                <span class="input-group-addon"><span
+                                                                                        class="fa fa-credit-card"></span></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-xs-7 col-md-7">
+                                                                        <div class="form-group"> <label><span
+                                                                                    class="hidden-xs">EXPIRATION</span><span
+                                                                                    class="visible-xs-inline">EXP</span>
+                                                                                DATE</label> <input type="tel"
+                                                                                class="form-control"
+                                                                                placeholder="MM / YY" /> </div>
+                                                                    </div>
+                                                                    <div class="col-xs-5 col-md-5 pull-right">
+                                                                        <div class="form-group"> <label>CV CODE</label>
+                                                                            <input type="tel" class="form-control"
+                                                                                placeholder="CVC" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-xs-12">
+                                                                        <div class="form-group"> <label>CARD
+                                                                                OWNER</label> <input type="text"
+                                                                                class="form-control"
+                                                                                placeholder="Card Owner Name" /> </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="book.html" class="btn btn-primary float-right px-5">Book</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class=" mb-2">
+                                        <hr>
+                                        <h4>Recommended:</h4>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<span>Vehicle: Van</span>
+                                        <br>
+                                        <img src="images/to.png" alt="img">
+                                        <hr>
+                                        <h4>Pricing Information</h4>
+                                        <span>Expect to Pay:</span>
+                                        <ul>
+                                            <li>5-8k pesos</li>
+                                            <li>*Roundtrip</li>
+                                            <li>*Toll fees included</li>
+                                            <li>*24 hours duration</li>
+                                        </ul>
+                                    </div> -->
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-5"> -->
+                <!-- <div class="slides">
+						<img src="images/hero-slider-1.jpg" alt="Image" class="img-fluid active">
+						<img src="images/hero-slider-2.jpg" alt="Image" class="img-fluid">
+						<img src="images/hero-slider-3.jpg" alt="Image" class="img-fluid">
+						<img src="images/hero-slider-4.jpg" alt="Image" class="img-fluid">
+						<img src="images/hero-slider-5.jpg" alt="Image" class="img-fluid">
+					</div> -->
+                <!-- <img src="images/maps.png" alt="image"> -->
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="site-footer">
+        <div class="inner first">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6">
+                        <div class="widget">
+                            <h3 class="heading">About Tour</h3>
+                            <p>From hiking through wonderful places to tasting exotic street food, we'll help you create
+                                memories that will last a lifetime. So why wait?</p>
+                        </div>
+                        <div class="widget">
+                            <ul class="list-unstyled social">
+                                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                                <li><a href="#"><span class="icon-instagram"></span></a></li>
+                                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                                <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                                <li><a href="#"><span class="icon-dribbble"></span></a></li>
+                                <li><a href="#"><span class="icon-pinterest"></span></a></li>
+                                <li><a href="#"><span class="icon-apple"></span></a></li>
+                                <li><a href="#"><span class="icon-google"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                        <div class="widget">
+                            <h3 class="heading">Contact</h3>
+                            <ul class="list-unstyled quick-info links">
+                                <li class="email"><a href="#">mail@example.com</a></li>
+                                <li class="phone"><a href="#">+1 222 212 3819</a></li>
+                                <li class="address"><a href="#">43 Raymouth Rd., Baguio, Philippines</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="inner dark">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-8 mb-3 mb-md-0 mx-auto">
+                        <p>Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash;
+                            Designed by <a href="#" class="link-highlight">Go Tour Guide</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="overlayer"></div>
+    <div class="loader">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/daterangepicker.js"></script>
+
+    <script src="js/typed.js"></script>
+    <script>
+        $(function () {
+            var slides = $('.slides'),
+                images = slides.find('img');
+
+            images.each(function (i) {
+                $(this).attr('data-id', i + 1);
+            })
+
+            var typed = new Typed('.typed-words', {
+                strings: ["Baguio.", " La Trinidad.", " Itogon.", " Sablan.", " Tuba."],
+                typeSpeed: 80,
+                backSpeed: 80,
+                backDelay: 4000,
+                startDelay: 1000,
+                loop: true,
+                showCursor: true,
+                preStringTyped: (arrayPos, self) => {
+                    arrayPos++;
+                    console.log(arrayPos);
+                    $('.slides img').removeClass('active');
+                    $('.slides img[data-id="' + arrayPos + '"]').addClass('active');
+                }
+
+            });
+        })
+    </script>
+
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>

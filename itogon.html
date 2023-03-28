@@ -1,0 +1,402 @@
+<!-- /*
+* Website Name: Go Tour Guide
+* Website Author: Justine Roque
+* Website URI: https://github.com/rq-J
+*/ -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="GTGuide">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap4" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/daterangepicker.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .img {
+            height: 13em;
+            width: auto;
+            margin-bottom: 10px;
+        }
+    </style>
+
+    <title>Go Tour Guide</title>
+</head>
+
+<body>
+
+
+    <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close">
+                <span class="icofont-close js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div>
+
+
+    <!--Navbar-->
+    <nav class="site-nav">
+        <div class="container">
+            <div class="site-navigation">
+                <a href="index.html" class="logo m-0">Go Tour Guide <span class="text-primary">.</span></a>
+
+                <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li class="has-children">
+                        <a href="#">B.L.I.S.T</a>
+                        <ul class="dropdown">
+                            <li><a href="baguio.html">Baguio</a></li>
+                            <li><a href="la-trinidad.html">La Trinidad</a></li>
+                            <li><a href="itogon.html">Itogon</a></li>
+                            <li><a href="sablan.html">Sablan</a></li>
+                            <li><a href="tuba.html">Tuba</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Log Out</a></li>
+                </ul>
+
+                <a href="#"
+                    class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"
+                    data-toggle="collapse" data-target="#main-navbar">
+                    <span></span>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="hero" style="padding-bottom: 0rem;padding-top: 5rem; margin-bottom: 0;">
+
+    </div>
+
+    <!-- Tour places in baguio to tour, and selection in BLIST -->
+    <div class="untree_co-section" style="padding-top: 30px;">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5" style="margin-bottom: 10px !important;">
+                <div class="col-lg-6">
+                    <h2 class="section-title text-center mb-3">Destinations</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                    <div class="media-1">
+                        <div class="owl-single dots-absolute owl-carousel">
+                            <img src="images/itogon/balatoc-mines/1.jpg" alt="Images"
+                                class="img-fluid rounded-20 img">
+                            <img src="images/itogon/balatoc-mines/2.jpg" alt="Images"
+                                class="img-fluid rounded-20 img">
+                            <img src="images/itogon/balatoc-mines/3.jpg" alt="Images"
+                                class="img-fluid rounded-20 img">
+                            <img src="images/itogon/balatoc-mines/4.jpg" alt="Images"
+                                class="img-fluid rounded-20 img">
+                            <img src="images/itogon/balatoc-mines/5.jpg" alt="Images"
+                                class="img-fluid rounded-20 img">
+                        </div>
+                        <span class="d-flex align-items-center loc mb-2">
+                            <span class="icon-room mr-3"></span>
+                            <span>Baguio Virac</span>
+                        </span>
+                        <div class="d-flex align-items-center">
+                            <div>
+                                <h3><a href="#">Balotoc Mines</a></h3>
+                                <div class="price ml-auto">
+                                    <span>Itogon</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="1" onclick="one()" class="btn btn-primary d-block mx-auto"
+                            style="width: 100%;">Select</button>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                    <div class="media-1">
+                        <div class="owl-single dots-absolute owl-carousel">
+                            <img src="images/itogon/mt.pigingan/1.jpg" alt="Images" class="img-fluid rounded-20 img">
+                            <img src="images/itogon/mt.pigingan/2.jpg" alt="Images" class="img-fluid rounded-20 img">
+                            <img src="images/itogon/mt.pigingan/3.jpg" alt="Images" class="img-fluid rounded-20 img">
+                        </div>
+                        <span class="d-flex align-items-center loc mb-2">
+                            <span class="icon-room mr-3"></span>
+                            <span>6PQW+3GG</span>
+                        </span>
+                        <div class="d-flex align-items-center">
+                            <div>
+                                <h3><a href="#">Mt. Pagingan</a></h3>
+                                <div class="price ml-auto">
+                                    <span>Itogon, Benguet</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="2" onclick="two()" class="btn btn-primary d-block mx-auto"
+                            style="width: 100%;">Select</button>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                    <div class="media-1">
+                        <div class="owl-single dots-absolute owl-carousel">
+                            <img src="images/itogon/mt.ugo/1.jpg" alt="Images" class="img-fluid rounded-20 img">
+                            <img src="images/itogon/mt.ugo/2.jpg" alt="Images" class="img-fluid rounded-20 img">
+                            <img src="images/itogon/mt.ugo/3.jpg" alt="Images" class="img-fluid rounded-20 img">
+                            <img src="images/itogon/mt.ugo/4.jpg" alt="Images" class="img-fluid rounded-20 img">
+                            <img src="images/itogon/mt.ugo/5.jpg" alt="Images" class="img-fluid rounded-20 img">
+                        </div>
+                        <span class="d-flex align-items-center loc mb-2">
+                            <span class="icon-room mr-3"></span>
+                            <span>Domolpos, Tinongdan</span>
+                        </span>
+                        <div class="d-flex align-items-center">
+                            <div>
+                                <h3><a href="#">Mt. Ugo</a></h3>
+                                <div class="price ml-auto">
+                                    <span>Itogon, Philippines</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <button id="3" onclick="three()" class="btn btn-primary d-block mx-auto"
+                            style="width: 100%;">Select</button>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                    <div class="media-1">
+                        <div class="owl-single dots-absolute owl-carousel">
+                            <img src="images/itogon/mt.ulap/1.jpg" alt="Images" class="img-fluid rounded-20 img">
+                            <img src="images/itogon/mt.ulap/2.jpg" alt="Images" class="img-fluid rounded-20 img">
+                            <img src="images/itogon/mt.ulap/3.jpg" alt="Images" class="img-fluid rounded-20 img">
+                            <img src="images/itogon/mt.ulap/4.jpg" alt="Images" class="img-fluid rounded-20 img">
+                            <img src="images/itogon/mt.ulap/5.jpg" alt="Images" class="img-fluid rounded-20 img">
+                        </div>
+                        <span class="d-flex align-items-center loc mb-2">
+                            <span class="icon-room mr-3"></span>
+                            <span>Ampucao</span>
+                        </span>
+
+                        <div class="d-flex align-items-center">
+                            <div>
+                                <h3><a href="#">Mt. Ulap</a></h3>
+                                <div class="price ml-auto">
+                                    <span>Itogon, Benguet</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <button id="4" onclick="four()" class="btn btn-primary d-block mx-auto"
+                            style="width: 100%;">Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5"></div>
+            <div class="row">
+                <p class="col-9">
+                </p>
+                <a href="itogon-tourguide.html" class="btn btn-primary col-3 ml-auto">Proceed</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="site-footer">
+        <div class="inner first">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6">
+                        <div class="widget">
+                            <h3 class="heading">About Tour</h3>
+                            <p>From hiking through wonderful places to tasting exotic street food, we'll help you create
+                                memories that will last a lifetime. So why wait?</p>
+                        </div>
+                        <div class="widget">
+                            <ul class="list-unstyled social">
+                                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                                <li><a href="#"><span class="icon-instagram"></span></a></li>
+                                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                                <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                                <li><a href="#"><span class="icon-dribbble"></span></a></li>
+                                <li><a href="#"><span class="icon-pinterest"></span></a></li>
+                                <li><a href="#"><span class="icon-apple"></span></a></li>
+                                <li><a href="#"><span class="icon-google"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                        <div class="widget">
+                            <h3 class="heading">Contact</h3>
+                            <ul class="list-unstyled quick-info links">
+                                <li class="email"><a href="#">mail@example.com</a></li>
+                                <li class="phone"><a href="#">+1 222 212 3819</a></li>
+                                <li class="address"><a href="#">43 Raymouth Rd., Baguio, Philippines</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="inner dark">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-8 mb-3 mb-md-0 mx-auto">
+                        <p>Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash;
+                            Designed by <a href="#" class="link-highlight">Go Tour Guide</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="overlayer"></div>
+    <div class="loader">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/daterangepicker.js"></script>
+
+    <script src="js/typed.js"></script>
+    <script>
+        $(function () {
+            var slides = $('.slides'),
+                images = slides.find('img');
+
+            images.each(function (i) {
+                $(this).attr('data-id', i + 1);
+            })
+
+            var typed = new Typed('.typed-words', {
+                strings: ["Baguio.", " La Trinidad.", " Itogon.", " Sablan.", " Tuba."],
+                typeSpeed: 80,
+                backSpeed: 80,
+                backDelay: 4000,
+                startDelay: 1000,
+                loop: true,
+                showCursor: true,
+                preStringTyped: (arrayPos, self) => {
+                    arrayPos++;
+                    console.log(arrayPos);
+                    $('.slides img').removeClass('active');
+                    $('.slides img[data-id="' + arrayPos + '"]').addClass('active');
+                }
+
+            });
+        })
+    </script>
+
+    <script>
+        function one() {
+            const button = document.getElementById("1");
+
+            if (button.style.backgroundColor === "darkblue") {
+                button.style.backgroundColor = "";
+            } else {
+                button.style.backgroundColor = "darkblue";
+            }
+        }
+        function two() {
+            const button = document.getElementById("2");
+
+            if (button.style.backgroundColor === "darkblue") {
+                button.style.backgroundColor = "";
+            } else {
+                button.style.backgroundColor = "darkblue";
+            }
+        }
+        function three() {
+            const button = document.getElementById("3");
+
+            if (button.style.backgroundColor === "darkblue") {
+                button.style.backgroundColor = "";
+            } else {
+                button.style.backgroundColor = "darkblue";
+            }
+        }
+        function four() {
+            const button = document.getElementById("4");
+
+            if (button.style.backgroundColor === "darkblue") {
+                button.style.backgroundColor = "";
+            } else {
+                button.style.backgroundColor = "darkblue";
+            }
+        }
+        function five() {
+            const button = document.getElementById("5");
+
+            if (button.style.backgroundColor === "darkblue") {
+                button.style.backgroundColor = "";
+            } else {
+                button.style.backgroundColor = "darkblue";
+            }
+        }
+        function six() {
+            const button = document.getElementById("6");
+
+            if (button.style.backgroundColor === "darkblue") {
+                button.style.backgroundColor = "";
+            } else {
+                button.style.backgroundColor = "darkblue";
+            }
+        }
+        function seven() {
+            const button = document.getElementById("7");
+
+            if (button.style.backgroundColor === "darkblue") {
+                button.style.backgroundColor = "";
+            } else {
+                button.style.backgroundColor = "darkblue";
+            }
+        }
+        function eight() {
+            const button = document.getElementById("8");
+
+            if (button.style.backgroundColor === "darkblue") {
+                button.style.backgroundColor = "";
+            } else {
+                button.style.backgroundColor = "darkblue";
+            }
+        }
+
+    </script>
+
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
