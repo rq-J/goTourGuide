@@ -153,9 +153,12 @@
                 <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
                     <div class="media-1">
                         <div class="owl-single dots-absolute owl-carousel">
-                            <img src="images/tuba/bridal-veil-falls/1.jpg" alt="Images" class="img-fluid rounded-20 img">
-                            <img src="images/tuba/bridal-veil-falls/2.jpg" alt="Images" class="img-fluid rounded-20 img">
-                            <img src="images/tuba/bridal-veil-falls/3.jpg" alt="Images" class="img-fluid rounded-20 img">
+                            <img src="images/tuba/bridal-veil-falls/1.jpg" alt="Images"
+                                class="img-fluid rounded-20 img">
+                            <img src="images/tuba/bridal-veil-falls/2.jpg" alt="Images"
+                                class="img-fluid rounded-20 img">
+                            <img src="images/tuba/bridal-veil-falls/3.jpg" alt="Images"
+                                class="img-fluid rounded-20 img">
                         </div>
                         <span class="d-flex align-items-center loc mb-2">
                             <span class="icon-room mr-3"></span>
@@ -207,7 +210,7 @@
             <div class="row">
                 <p class="col-9">
                 </p>
-                <a href="tuba-tourguide.html" class="btn btn-primary col-3 ml-auto">Proceed</a>
+                <button class="btn btn-primary col-3 ml-auto">Proceed</button>
             </div>
         </div>
     </div>
@@ -314,31 +317,72 @@
     </script>
 
     <script>
+        let myArray = [];
+
+        const addItem = (item) => {
+            myArray.push(item);
+            console.log(`Added ${item} to array. Array now contains: ${myArray}`);
+        };
+
+
+        const removeItem = (item) => {
+            const index = myArray.indexOf(item);
+            if (index > -1) {
+                myArray.splice(index, 1);
+                console.log(`Removed ${item} from array. Array now contains: ${myArray}`);
+            } else {
+                console.log(`${item} not found in array.`);
+            }
+        };
+
+        function setLocal() {
+            localStorage.setItem('places', myArray);
+            localStorage.setItem('blist', 'Baguio');
+            setTimeout(() => {
+                window.location.href = "baguio-tourguide.html";
+            }, 500);
+        };
+
         function one() {
             const button = document.getElementById("1");
+            const item = " Aran Cave";
 
             if (button.style.backgroundColor === "darkblue") {
                 button.style.backgroundColor = "";
+                button.innerText = "Unselect";
+                addItem(item);
             } else {
                 button.style.backgroundColor = "darkblue";
+                button.innerText = "Select";
+                removeItem(item);
             }
         }
         function two() {
             const button = document.getElementById("2");
+            const item = " BenCab";
 
             if (button.style.backgroundColor === "darkblue") {
                 button.style.backgroundColor = "";
+                button.innerText = "Unselect";
+                addItem(item);
             } else {
                 button.style.backgroundColor = "darkblue";
+                button.innerText = "Select";
+                removeItem(item);
             }
         }
         function three() {
             const button = document.getElementById("3");
+            const item = " Bridal Veil Falls";
 
             if (button.style.backgroundColor === "darkblue") {
                 button.style.backgroundColor = "";
+                button.innerText = "Unselect";
+                addItem(item);
             } else {
                 button.style.backgroundColor = "darkblue";
+                button.innerText = "Select";
+                removeItem(item);
             }
         }
         function four() {
@@ -346,8 +390,12 @@
 
             if (button.style.backgroundColor === "darkblue") {
                 button.style.backgroundColor = "";
+                button.innerText = "Unselect";
+                addItem(item);
             } else {
                 button.style.backgroundColor = "darkblue";
+                button.innerText = "Select";
+                removeItem(item);
             }
         }
         function five() {
@@ -355,8 +403,12 @@
 
             if (button.style.backgroundColor === "darkblue") {
                 button.style.backgroundColor = "";
+                button.innerText = "Unselect";
+                addItem(item);
             } else {
                 button.style.backgroundColor = "darkblue";
+                button.innerText = "Select";
+                removeItem(item);
             }
         }
         function six() {
@@ -364,8 +416,12 @@
 
             if (button.style.backgroundColor === "darkblue") {
                 button.style.backgroundColor = "";
+                button.innerText = "Unselect";
+                addItem(item);
             } else {
                 button.style.backgroundColor = "darkblue";
+                button.innerText = "Select";
+                removeItem(item);
             }
         }
         function seven() {
@@ -373,8 +429,12 @@
 
             if (button.style.backgroundColor === "darkblue") {
                 button.style.backgroundColor = "";
+                button.innerText = "Unselect";
+                addItem(item);
             } else {
                 button.style.backgroundColor = "darkblue";
+                button.innerText = "Select";
+                removeItem(item);
             }
         }
         function eight() {
@@ -382,8 +442,12 @@
 
             if (button.style.backgroundColor === "darkblue") {
                 button.style.backgroundColor = "";
+                button.innerText = "Unselect";
+                addItem(item);
             } else {
                 button.style.backgroundColor = "darkblue";
+                button.innerText = "Select";
+                removeItem(item);
             }
         }
 

@@ -109,28 +109,30 @@
                                 <form class="form">
                                     <div class="row">
                                         <div class="col-4">
-                                            <input type="text" name="" id="" value="Destination: Baguio"
+                                            <input type="text" name="blist" id="blist" value="Destination: Baguio"
                                                 class="form-control" readonly>
                                             <br>
                                             <h4>Attractions:</h4>
-                                            <span>Attraction #1, Attraction #2, Attraction #3, Attraction #4, Attraction
-                                                #5, Attraction #6, Attraction #7, Attraction #8</span>
+                                            <!-- <span>Attraction #1, Attraction #2, Attraction #3, Attraction #4, Attraction
+                                                #5, Attraction #6, Attraction #7, Attraction #8</span> -->
+                                                <textarea name="places" id="places" cols="30" rows="5" readonly></textarea>
                                             <br>
                                             <span>Total: 8 Attractions</span>
                                             <br>
                                             <br>
                                             <br>
-                                            <input type="text" name="" id="" value="Schedule" class="form-control mb-2"
+                                            <input type="text" name="samting" id="samting" value="Schedule" class="form-control mb-2"
                                                 readonly>
-                                            <span>Date:</span>
+                                            <input type="text" class="form-control" id="daterange" name="daterange">
                                             <br>
-                                            <span>16/02/2023 THU</span>
+                                            <!-- <input type="text" class="form-control" id="daterange" name="daterange"> -->
+                                            <!-- <span>16/02/2023 THU</span>
                                             <br>
-                                            <span>17/02/2023 FRI</span>
+                                            <span>17/02/2023 FRI</span> -->
                                         </div>
                                         <div class="col-4">
-                                            <input type="text" name="" id="" value="From: Manila" class="form-control"
-                                                readonly>
+                                            <input type="text" name="from" id="from" value="From: Manila"
+                                                class="form-control" readonly>
                                             <br>
                                             <h4>Vehicle:</h4>
                                             <span>Van</span>
@@ -148,16 +150,19 @@
                                             </ul>
                                         </div>
                                         <div class="col-4">
-                                            <input type="text" name="" id="" value="Adult/s:" class="form-control"
+                                            <!-- <input type="text" name="" id="" value="Adult/s:" class="form-control"
+                                                readonly> -->
+                                            <!-- <span id="adult" value="4"></span> -->
+                                            <input type="text" name="" id="adult" value="" class="form-control"
                                                 readonly>
                                             <br>
-                                            <span>= 4</span>
+                                            <!-- <input type="text" name="" id="" value="Children:" class="form-control"
+                                                readonly> -->
                                             <br>
-                                            <br>
-                                            <input type="text" name="" id="" value="Children:" class="form-control"
+                                            <input type="text" name="" id="children" value="" class="form-control"
                                                 readonly>
                                             <br>
-                                            <span>= None</span>
+                                            <!-- <span>= None</span> -->
                                         </div>
                                     </div>
                                     <!-- <div class=" mb-2">
@@ -180,8 +185,8 @@
                                     <div class="row align-items-center">
                                         <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-12">
                                             <!-- <input type="submit" class="btn btn-primary btn-block" value="Proceed"> -->
-                                            <a href="payment.html"
-                                                class="btn btn-primary float-right px-5">Proceed to Payment</a>
+                                            <a href="payment.html" class="btn btn-primary float-right px-5">Proceed to
+                                                Payment</a>
                                         </div>
                                         <!-- <div class="col-lg-8">
 											<label class="control control--checkbox mt-3">
@@ -309,6 +314,56 @@
 
             });
         })
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            setTimeout(function () {
+                // var myValue = localStorage.getItem('myKey');
+                // document.getElementById('myInput').value = myValue;
+
+                let blist = document.getElementById('blist');
+                blist.value = "To: " +localStorage.getItem('blist');
+
+                let adult = document.getElementById('adult');
+                adult.value = "Adult/s: " +localStorage.getItem('adult');
+
+                let children = document.getElementById('children');
+                children.value = "Children: " +localStorage.getItem('children');
+
+                let daterange = document.getElementById('daterange');
+                daterange.value = localStorage.getItem('daterange');
+
+                let from = document.getElementById('from');
+                from.value = "From: " +localStorage.getItem('from');
+
+                let places = document.getElementById('places');
+                places.value = localStorage.getItem('places');
+
+                
+
+
+
+                // alert('Data retrieved from local storage and set to input box' + localStorage.getItem('children'));
+
+            }, 1000); // delay the action by 5 seconds (5000 milliseconds)
+        });
+
+        // let blist = localStorage.getItem('blist');
+        // document.getElementById('blist').value = blist;
+
+        // let adult = localStorage.getItem('adult');
+        // document.getElementById('adult').value = adult;
+
+        // let children = localStorage.getItem('children');
+        // document.getElementById('children').value = children;
+
+        // let daterange = localStorage.getItem('daterange');
+        // document.getElementById('daterange').value = daterange;
+
+        // let from = localStorage.getItem('from');
+        // document.getElementById('from').value = from;
+
     </script>
 
     <script src="js/custom.js"></script>

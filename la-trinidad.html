@@ -134,9 +134,12 @@
                 <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
                     <div class="media-1">
                         <div class="owl-single dots-absolute owl-carousel">
-                            <img src="images/la-trinidad/benguet-museum/1.jpg" alt="Images" class="img-fluid rounded-20 img">
-                            <img src="images/la-trinidad/benguet-museum/1.jpg" alt="Images" class="img-fluid rounded-20 img">
-                            <img src="images/la-trinidad/benguet-museum/1.jpg" alt="Images" class="img-fluid rounded-20 img">
+                            <img src="images/la-trinidad/benguet-museum/1.jpg" alt="Images"
+                                class="img-fluid rounded-20 img">
+                            <img src="images/la-trinidad/benguet-museum/1.jpg" alt="Images"
+                                class="img-fluid rounded-20 img">
+                            <img src="images/la-trinidad/benguet-museum/1.jpg" alt="Images"
+                                class="img-fluid rounded-20 img">
                         </div>
                         <span class="d-flex align-items-center loc mb-2">
                             <span class="icon-room mr-3"></span>
@@ -157,12 +160,18 @@
                 <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
                     <div class="media-1">
                         <div class="owl-single dots-absolute owl-carousel">
-                            <img src="images/la-trinidad/betag-strawberry-farm/1.jpg" alt="Images" class="img-fluid rounded-20 img">
-                            <img src="images/la-trinidad/betag-strawberry-farm/2.jpg" alt="Images" class="img-fluid rounded-20 img">
-                            <img src="images/la-trinidad/betag-strawberry-farm/3.jpg" alt="Images" class="img-fluid rounded-20 img">
-                            <img src="images/la-trinidad/betag-strawberry-farm/4.jpg" alt="Images" class="img-fluid rounded-20 img">
-                            <img src="images/la-trinidad/betag-strawberry-farm/5.jpg" alt="Images" class="img-fluid rounded-20 img">
-                            <img src="images/la-trinidad/betag-strawberry-farm/6.jpg" alt="Images" class="img-fluid rounded-20 img">
+                            <img src="images/la-trinidad/betag-strawberry-farm/1.jpg" alt="Images"
+                                class="img-fluid rounded-20 img">
+                            <img src="images/la-trinidad/betag-strawberry-farm/2.jpg" alt="Images"
+                                class="img-fluid rounded-20 img">
+                            <img src="images/la-trinidad/betag-strawberry-farm/3.jpg" alt="Images"
+                                class="img-fluid rounded-20 img">
+                            <img src="images/la-trinidad/betag-strawberry-farm/4.jpg" alt="Images"
+                                class="img-fluid rounded-20 img">
+                            <img src="images/la-trinidad/betag-strawberry-farm/5.jpg" alt="Images"
+                                class="img-fluid rounded-20 img">
+                            <img src="images/la-trinidad/betag-strawberry-farm/6.jpg" alt="Images"
+                                class="img-fluid rounded-20 img">
                         </div>
                         <span class="d-flex align-items-center loc mb-2">
                             <span class="icon-room mr-3"></span>
@@ -214,7 +223,7 @@
             <div class="row">
                 <p class="col-9">
                 </p>
-                <a href="la-trinidad-tourguide.html" class="btn btn-primary col-3 ml-auto">Proceed</a>
+                <button onclick="setLocal()" class="btn btn-primary col-3 ml-auto">Proceed</button>
             </div>
         </div>
     </div>
@@ -321,31 +330,73 @@
     </script>
 
     <script>
+        let myArray = [];
+
+        const addItem = (item) => {
+            myArray.push(item);
+            console.log(`Added ${item} to array. Array now contains: ${myArray}`);
+        };
+
+
+        const removeItem = (item) => {
+            const index = myArray.indexOf(item);
+            if (index > -1) {
+                myArray.splice(index, 1);
+                console.log(`Removed ${item} from array. Array now contains: ${myArray}`);
+            } else {
+                console.log(`${item} not found in array.`);
+            }
+        };
+
+        function setLocal() {
+            localStorage.setItem('places', myArray);
+            localStorage.setItem('blist', 'La Trinidad');
+            setTimeout(() => {
+                window.location.href = "la-trinidad-tourguide.html";
+            }, 500);
+        };
+
+
         function one() {
             const button = document.getElementById("1");
+            const item = " Balili Bell Church";
 
             if (button.style.backgroundColor === "darkblue") {
                 button.style.backgroundColor = "";
+                button.innerText = "Select";
+                removeItem(item);
             } else {
                 button.style.backgroundColor = "darkblue";
+                button.innerText = "Unselect";
+                addItem(item);
             }
         }
         function two() {
             const button = document.getElementById("2");
+            const item = " Benguet Museum";
 
             if (button.style.backgroundColor === "darkblue") {
                 button.style.backgroundColor = "";
+                button.innerText = "Select";
+                removeItem(item);
             } else {
                 button.style.backgroundColor = "darkblue";
+                button.innerText = "Unselect";
+                addItem(item);
             }
         }
         function three() {
             const button = document.getElementById("3");
+            const item = " Betag Strawberry Farm";
 
             if (button.style.backgroundColor === "darkblue") {
                 button.style.backgroundColor = "";
+                button.innerText = "Select";
+                removeItem(item);
             } else {
                 button.style.backgroundColor = "darkblue";
+                button.innerText = "Unselect";
+                addItem(item);
             }
         }
         function four() {
@@ -353,8 +404,12 @@
 
             if (button.style.backgroundColor === "darkblue") {
                 button.style.backgroundColor = "";
+                button.innerText = "Select";
+                removeItem(item);
             } else {
                 button.style.backgroundColor = "darkblue";
+                button.innerText = "Unselect";
+                addItem(item);
             }
         }
         function five() {
@@ -362,8 +417,12 @@
 
             if (button.style.backgroundColor === "darkblue") {
                 button.style.backgroundColor = "";
+                button.innerText = "Select";
+                removeItem(item);
             } else {
                 button.style.backgroundColor = "darkblue";
+                button.innerText = "Unselect";
+                addItem(item);
             }
         }
         function six() {
@@ -371,8 +430,12 @@
 
             if (button.style.backgroundColor === "darkblue") {
                 button.style.backgroundColor = "";
+                button.innerText = "Select";
+                removeItem(item);
             } else {
                 button.style.backgroundColor = "darkblue";
+                button.innerText = "Unselect";
+                addItem(item);
             }
         }
         function seven() {
@@ -380,8 +443,12 @@
 
             if (button.style.backgroundColor === "darkblue") {
                 button.style.backgroundColor = "";
+                button.innerText = "Select";
+                removeItem(item);
             } else {
                 button.style.backgroundColor = "darkblue";
+                button.innerText = "Unselect";
+                addItem(item);
             }
         }
         function eight() {
@@ -389,8 +456,12 @@
 
             if (button.style.backgroundColor === "darkblue") {
                 button.style.backgroundColor = "";
+                button.innerText = "Select";
+                removeItem(item);
             } else {
                 button.style.backgroundColor = "darkblue";
+                button.innerText = "Unselect";
+                addItem(item);
             }
         }
 

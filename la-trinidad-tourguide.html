@@ -109,9 +109,10 @@
                             <p>Email: aegnby@gmail.com</p>
                         </div>
                         <p class="row">
+                            <span class="col-1"></span>
                             <button id="1" onclick="one()" class="btn btn-primary d-block mx-auto col-10">Select</button>
+                            <span class="col-1"></span>
                         </p>
-                        <span class="col-1"></span>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-4">
@@ -123,9 +124,10 @@
                             <p>Email: ariellaguyan@yahoo.com</p>
                         </div>
                         <p class="row">
+                            <span class="col-1"></span>
                             <button id="2" onclick="two()" class="btn btn-primary d-block mx-auto col-10">Select</button>
+                            <span class="col-1"></span>
                         </p>
-                        <span class="col-1"></span>
                     </div>
                 </div>
 
@@ -138,9 +140,10 @@
                             <p>Email: shekinahpagtulingan@gmail.com</p>
                         </div>
                         <p class="row">
+                            <span class="col-1"></span>
                             <button id="3" onclick="three()" class="btn btn-primary d-block mx-auto col-10">Select</button>
+                            <span class="col-1"></span>
                         </p>
-                        <span class="col-1"></span>
                     </div>
                 </div>
 
@@ -259,8 +262,10 @@
 
             if (button.style.backgroundColor === "darkblue") {
                 button.style.backgroundColor = "";
+                button.innerText = "Select";
             } else {
                 button.style.backgroundColor = "darkblue";
+                button.innerText = "Unselect";
             }
         }
         function two() {
@@ -268,8 +273,10 @@
 
             if (button.style.backgroundColor === "darkblue") {
                 button.style.backgroundColor = "";
+                button.innerText = "Select";
             } else {
                 button.style.backgroundColor = "darkblue";
+                button.innerText = "Unselect";
             }
         }
         function three() {
@@ -277,8 +284,10 @@
 
             if (button.style.backgroundColor === "darkblue") {
                 button.style.backgroundColor = "";
+                button.innerText = "Select";
             } else {
                 button.style.backgroundColor = "darkblue";
+                button.innerText = "Unselect";
             }
         }
 

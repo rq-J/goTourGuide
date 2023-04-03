@@ -109,9 +109,12 @@
                             <p>Email: cane772001@yahoo.com</p>
                         </div>
                         <p class="row">
-                            <button id="1" onclick="one()" class="btn btn-primary d-block mx-auto col-10">Select</button>
+                            <span class="col-1"></span>
+                            <button id="1" onclick="one()"
+                                class="btn btn-primary d-block mx-auto col-10">Select</button>
+                            <span class="col-1"></span>
                         </p>
-                        <span class="col-1"></span>
+
                     </div>
                 </div>
                 <div class="col-lg-4 mb-4">
@@ -120,12 +123,14 @@
                         <div class="px-3 text-center">
                             <h3 class="mb-0">Evangeline R. Batil</h3>
                             <span>Number: 09565408715</span>
-                            <p>Email:  evabatil@gmail.com</p>
+                            <p>Email: evabatil@gmail.com</p>
                         </div>
                         <p class="row">
-                            <button id="2" onclick="two()" class="btn btn-primary d-block mx-auto col-10">Select</button>
+                            <span class="col-1"></span>
+                            <button id="2" onclick="two()"
+                                class="btn btn-primary d-block mx-auto col-10">Select</button>
+                            <span class="col-1"></span>
                         </p>
-                        <span class="col-1"></span>
                     </div>
                 </div>
 
@@ -139,9 +144,11 @@
                             </p>
                         </div>
                         <p class="row">
-                            <button id="3" onclick="three()" class="btn btn-primary d-block mx-auto col-10">Select</button>
+                            <span class="col-1"></span>
+                            <button id="3" onclick="three()"
+                                class="btn btn-primary d-block mx-auto col-10">Select</button>
+                            <span class="col-1"></span>
                         </p>
-                        <span class="col-1"></span>
                     </div>
                 </div>
 
@@ -260,8 +267,10 @@
 
             if (button.style.backgroundColor === "darkblue") {
                 button.style.backgroundColor = "";
+                button.innerText = "Select";
             } else {
                 button.style.backgroundColor = "darkblue";
+                button.innerText = "Unselect";
             }
         }
         function two() {
@@ -269,8 +278,10 @@
 
             if (button.style.backgroundColor === "darkblue") {
                 button.style.backgroundColor = "";
+                button.innerText = "Select";
             } else {
                 button.style.backgroundColor = "darkblue";
+                button.innerText = "Unselect";
             }
         }
         function three() {
@@ -278,8 +289,10 @@
 
             if (button.style.backgroundColor === "darkblue") {
                 button.style.backgroundColor = "";
+                button.innerText = "Select";
             } else {
                 button.style.backgroundColor = "darkblue";
+                button.innerText = "Unselect";
             }
         }
 

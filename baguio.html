@@ -326,7 +326,7 @@
             <div class="row">
                 <p class="col-9">
                 </p>
-                <a href="baguio-tourguide.html" class="btn btn-primary col-3 ml-auto">Proceed</a>
+                <a class="btn btn-primary col-3 ml-auto" onclick="setLocal()">Proceed</a>
             </div>
         </div>
     </div>
@@ -432,81 +432,148 @@
         })
     </script>
 
-<script>
-    function one() {
-        const button = document.getElementById("1");
+    <script>
+        let myArray = [];
 
-        if (button.style.backgroundColor === "darkblue") {
-            button.style.backgroundColor = "";
-        } else {
-            button.style.backgroundColor = "darkblue";
+        const addItem = (item) => {
+            myArray.push(item);
+            console.log(`Added ${item} to array. Array now contains: ${myArray}`);
+        };
+
+
+        const removeItem = (item) => {
+            const index = myArray.indexOf(item);
+            if (index > -1) {
+                myArray.splice(index, 1);
+                console.log(`Removed ${item} from array. Array now contains: ${myArray}`);
+            } else {
+                console.log(`${item} not found in array.`);
+            }
+        };
+
+
+        function one() {
+            const button = document.getElementById("1");
+            const item = " Botanical Garden";
+
+            if (button.style.backgroundColor === "darkblue") {
+                button.style.backgroundColor = "";
+                button.innerText = "Select";
+                removeItem(item);
+            } else {
+                button.style.backgroundColor = "darkblue";
+                button.innerText = "Unselect";
+                addItem(item);
+            }
         }
-    }
-    function two() {
-        const button = document.getElementById("2");
+        function two() {
+            const button = document.getElementById("2");
+            const item = " Burnham Park";
 
-        if (button.style.backgroundColor === "darkblue") {
-            button.style.backgroundColor = "";
-        } else {
-            button.style.backgroundColor = "darkblue";
+            if (button.style.backgroundColor === "darkblue") {
+                button.style.backgroundColor = "";
+                button.innerText = "Select";
+                removeItem(item);
+            } else {
+                button.style.backgroundColor = "darkblue";
+                button.innerText = "Unselect";
+                addItem(item);
+            }
         }
-    }
-    function three() {
-        const button = document.getElementById("3");
+        function three() {
+            const button = document.getElementById("3");
+            const item = " Camp John Hay";
 
-        if (button.style.backgroundColor === "darkblue") {
-            button.style.backgroundColor = "";
-        } else {
-            button.style.backgroundColor = "darkblue";
+            if (button.style.backgroundColor === "darkblue") {
+                button.style.backgroundColor = "";
+                button.innerText = "Select";
+                removeItem(item);
+            } else {
+                button.style.backgroundColor = "darkblue";
+                button.innerText = "Unselect";
+                addItem(item);
+            }
         }
-    }
-    function four() {
-        const button = document.getElementById("4");
+        function four() {
+            const button = document.getElementById("4");
+            const item = " Diplomat Hotel";
 
-        if (button.style.backgroundColor === "darkblue") {
-            button.style.backgroundColor = "";
-        } else {
-            button.style.backgroundColor = "darkblue";
+            if (button.style.backgroundColor === "darkblue") {
+                button.style.backgroundColor = "";
+                button.innerText = "Select";
+                removeItem(item);
+            } else {
+                button.style.backgroundColor = "darkblue";
+                button.innerText = "Unselect";
+                addItem(item);
+            }
         }
-    }
-    function five() {
-        const button = document.getElementById("5");
+        function five() {
+            const button = document.getElementById("5");
+            const item = " Mines View";
 
-        if (button.style.backgroundColor === "darkblue") {
-            button.style.backgroundColor = "";
-        } else {
-            button.style.backgroundColor = "darkblue";
+            if (button.style.backgroundColor === "darkblue") {
+                button.style.backgroundColor = "";
+                button.innerText = "Select";
+                removeItem(item);
+            } else {
+                button.style.backgroundColor = "darkblue";
+                button.innerText = "Unselect";
+                addItem(item);
+            }
         }
-    }
-    function six() {
-        const button = document.getElementById("6");
+        function six() {
+            const button = document.getElementById("6");
+            const item = " Mirador Herit. & Eco Park";
 
-        if (button.style.backgroundColor === "darkblue") {
-            button.style.backgroundColor = "";
-        } else {
-            button.style.backgroundColor = "darkblue";
+            if (button.style.backgroundColor === "darkblue") {
+                button.style.backgroundColor = "";
+                button.innerText = "Select";
+                removeItem(item);
+            } else {
+                button.style.backgroundColor = "darkblue";
+                button.innerText = "Unselect";
+                addItem(item);
+            }
         }
-    }
-    function seven() {
-        const button = document.getElementById("7");
+        function seven() {
+            const button = document.getElementById("7");
+            const item = " Tam-Awan Village";
 
-        if (button.style.backgroundColor === "darkblue") {
-            button.style.backgroundColor = "";
-        } else {
-            button.style.backgroundColor = "darkblue";
+            if (button.style.backgroundColor === "darkblue") {
+                button.style.backgroundColor = "";
+                button.innerText = "Select";
+                removeItem(item);
+            } else {
+                button.style.backgroundColor = "darkblue";
+                button.innerText = "Unselect";
+                addItem(item);
+            }
         }
-    }
-    function eight() {
-        const button = document.getElementById("8");
+        function eight() {
+            const button = document.getElementById("8");
+            const item = " Wright Park";
 
-        if (button.style.backgroundColor === "darkblue") {
-            button.style.backgroundColor = "";
-        } else {
-            button.style.backgroundColor = "darkblue";
+            if (button.style.backgroundColor === "darkblue") {
+                button.style.backgroundColor = "";
+                button.innerText = "Select";
+                removeItem(item);
+            } else {
+                button.style.backgroundColor = "darkblue";
+                button.innerText = "Unselect";
+                addItem(item);
+            }
         }
-    }
 
-</script>
+        function setLocal() {
+            localStorage.setItem('places', myArray);
+            localStorage.setItem('blist', 'Baguio');
+            setTimeout(() => {
+                window.location.href = "baguio-tourguide.html";
+            }, 500);
+        }
+
+    </script>
 
     <script src="js/custom.js"></script>
 
